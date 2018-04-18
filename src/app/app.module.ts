@@ -6,6 +6,11 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
+import { BlogPage } from '../pages/blog/blog';
+import { AboutmePage } from '../pages/aboutme/aboutme';
+import { ServicesPage } from '../pages/services/services';
+//import { PostPage } from '../pages/post/post';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -13,17 +18,26 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    BlogPage,
+    AboutmePage,
+    ServicesPage,
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    BlogPage,
+    AboutmePage,
+    ServicesPage,
+
   ],
   providers: [
     StatusBar,
